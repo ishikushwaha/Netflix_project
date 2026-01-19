@@ -17,7 +17,7 @@ The data for this project is sourced from the Kaggle dataset:
 
 ## Schema
 
-'''sql
+```sql
 DROP TABLE IF EXISTS netflix;
 CREATE TABLE netflix
 (
@@ -34,19 +34,19 @@ CREATE TABLE netflix
     listed_in    VARCHAR(250),
     description  VARCHAR(550)
 );
-'''
+```
 
 ## Business Problems and Solutions
 
 
 ### 1. Count the Number of Movies vs TV Shows
-'''sql
+```sql
 SELECT 
     type,
     COUNT(*)
 FROM netflix
 GROUP BY 1;
-'''
+```
 
 
 ** Objective: Determine the distribution of content types on Netflix.
